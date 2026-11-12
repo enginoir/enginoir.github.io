@@ -44,6 +44,7 @@ img { display: block; max-width: 100%; height: auto; }
 .hero h1 { font-size: clamp(3.35rem, 9vw, 7.5rem); letter-spacing: -0.085em; line-height: 0.94; margin: 0.22em 0; }
 .hero h1 span { color: var(--accent); }
 .hero-intro { max-width: 31ch; font-size: clamp(1.14rem, 2.4vw, 1.55rem); line-height: 1.4; }
+.hero-location { margin-top: 0.8rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.6rem; }
 .button { display: inline-flex; gap: 0.7rem; align-items: center; justify-content: center; min-height: 48px; padding: 0.6rem 1rem; border: 1px solid var(--line); border-radius: 0.55rem; text-decoration: none; font-weight: 700; }
 .button:hover { text-decoration: underline; }
