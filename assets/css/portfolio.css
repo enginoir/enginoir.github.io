@@ -116,3 +116,16 @@ img { display: block; max-width: 100%; height: auto; }
 @media (max-width: 285px) {
   .navigation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Editorial imagery gives each project a distinct visual entry point. */
+.projects .card { padding: 0; overflow: hidden; }
+.project-visual { margin: 0; background: var(--background); }
+.project-visual img { width: 100%; aspect-ratio: 8 / 5; object-fit: cover; }
+.project-visual figcaption { padding: 0.5rem 1.1rem; font-size: 0.75rem; color: var(--muted); }
+.project-copy { padding: clamp(1.1rem, 3vw, 1.85rem); }
+.projects .featured { display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
+.projects .featured .project-visual img { aspect-ratio: 4 / 3; }
+@media (max-width: 720px) {
+  .projects .featured { grid-template-columns: minmax(0, 1fr); }
+  .projects .featured .project-visual img { aspect-ratio: 8 / 5; }
+}
